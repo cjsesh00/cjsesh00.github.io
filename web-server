@@ -1,0 +1,8 @@
+Client server relationship: The client accesses the server via its address and requests. Specific requests deliver specific responses. 
+One might need data, or to delete data for example. An API is the interface linking the two.
+
+
+The request / response cycle is asynchronous. Meaning there is an unknown amount of time that will pass in between the request and the response. 
+The request needs to be formatted according to the API and the query parametes it has set. Assuming the client has done so coorectly, and submits a request 
+then the server will execute the desired action. The client is given a code notifying it if the request was succesful (200's) or not (400's).
+If the client requested data, that will also be included in the response.
